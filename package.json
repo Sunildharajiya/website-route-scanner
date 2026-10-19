@@ -1,25 +1,40 @@
 {
   "name": "website-route-scanner",
-  "version": "1.0.2",
-  "description": "Scan routes on your website.",
+  "version": "2.0.0",
+  "description": "A lightweight, dependency-free website route crawler for discovering internal URLs.",
   "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test",
+    "lint": "node --check index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/caotrongtin99/route-scanner.git"
   },
-  "keywords": ["router-scan", "scan", "route", "url", "detect", "website-route"],
+  "keywords": [
+    "website-crawler",
+    "route-scanner",
+    "url-discovery",
+    "link-crawler",
+    "web-crawler",
+    "internal-links",
+    "website-audit",
+    "nodejs",
+    "crawler"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/caotrongtin99/route-scanner/issues"
   },
   "homepage": "https://github.com/caotrongtin99/route-scanner#readme",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "query-string": "^7.1.1",
-    "request": "^2.88.2"
-  }
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
 }
